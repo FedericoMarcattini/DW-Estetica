@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto - Mi piel con salud</title>
+    <link
+      rel="shortcut icon"
+      href="./../piezasGraficas/favicon2.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./../styles/style.css" />
+  </head>
+  <body>
+    <header class="header" id="menu">
+      <div>
+        <a href="./../index.html">
+          <img
+            class="header__logo"
+            src="./../piezasGraficas/logo-header.png"
+            alt="Mi piel con salud"
+            title="Mi piel con salud"
+          />
+        </a>
+      </div>
+      <nav>
+        <ul class="header__menu">
+          <li class="header__menu__item"><a href="./../index.html">Inicio</a></li>
+          <li class="header__menu__item"><a href="./productos.html">Productos</a></li>
+          <li class="header__menu__item"><a href="./tratamientos.html">Tratamientos</a></li>
+          <li class="header__menu__item"><a href="./belleza.html">Belleza</a></li>
+          <li class="header__menu__item active"><a href="./contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <div class="encabezado">
+        <h1 class="encabezado__titulo">• CONTACTO •</h1>
+      </div>
+      <section class="contenido-contacto">
+      <div class="mapa-contacto">
+        <iframe class="maps"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d56120.01649488809!2d-65.8101794703199!3d-28.464454109453563!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x942428bf1d0f9fcd%3A0x7e1edd4b1609861a!2sSan%20Fernando%20del%20Valle%20de%20Catamarca%2C%20Catamarca!5e0!3m2!1ses!2sar!4v1658626786947!5m2!1ses!2sar"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      <div>
+      <div class="whatsapp-instagram">
+        <section class="wpp">
+        <a
+          href="https://wa.me/3834839711? text=Quiero solicitar un turno"
+          target="_blank"
+        >
+          <img
+            class="whatsappLogo"
+            src="./../piezasGraficas/logo whatsapp2.png"
+            alt="WhatsApp Logo"
+            title="WhatsApp Logo"
+          />
+        </a>
+        <a
+          class="textoContacto"
+          href="https://wa.me/3834839711? text=Quiero solicitar un turno"
+          target="_blank"
+        >
+          <strong>383 - 4000000</strong>
+        </a>
+      </section>
+      <section class="insta">
+        <a
+          href="https://instagram.com/mipielconsalud?igshid=YmMyMTA2M2Y="
+          target="_blank"
+        >
+          <img
+            class="instagramLogo"
+            src="./../piezasGraficas/logo instagram"
+            alt="Instagram Logo"
+            title="Instagram Logo"
+          />
+        </a>
+        <a
+          class="textoContacto"
+          href="https://instagram.com/mipielconsalud?igshid=YmMyMTA2M2Y="
+          target="_blank"
+        >
+          <strong>@mipielconsalud</strong>
+        </a>
+      </section>
+      </div>
+    </div>
+    </div>
+      <form class="form">
+        <label class="form__label" for="Nombre y Apellido">
+          <strong>Nombre</strong>
+          <input class="input" type="text" id="nombre" required="required" />
+        </label>
+        <label class="form__label" for="localidad">
+          <strong>Localidad</strong> 
+          <select class="select" name="Localidad" id="localidad">
+            <option disabled="disabled" selected="selected">
+              Selecciona tu localidad
+            </option>
+            <option>Capital</option>
+            <option>Valle Viejo</option>
+            <option>Fray Mamerto Esquiu</option>
+          </select>
+        </label>
+        <label class="form__label" for="teléfono">
+          <strong>Teléfono</strong> 
+          <input class="input" type="tel" id="teléfono" required="required"/>
+        </label>
+        <label class="form__label" for="email">
+          <strong>E-mail</strong> 
+          <input class="input" type="email" id="email" required="required"/>
+        </label>
+        <label class="form__label" for="mensaje">
+          <strong>Su consulta...</strong> 
+          <textarea class="input"
+            name="mensaje"
+            id=""
+            cols="30"
+            rows="5"
+            required="required"
+          ></textarea>
+        </label>
+        <div>
+        <button class="form__button" type="submit">Enviar consulta</button>
+        <button class="form__button" type="reset">Resetear</button>
+      </div>
+      </form>
+    </section>
+    </main>
+    <footer>
+      <div class="footer">
+        <p class="footer__autoria">Sitio Desarrollado por Federico Marcattini</p>
+        <ul class="footer__redes">
+          <li class="footer__texto"><a href="./contacto.html">Contacto</a></li>
+          <li class="footer__texto">
+            <a
+              href="https://instagram.com/mipielconsalud?igshid=YmMyMTA2M2Y="
+              target="_blank"
+              >Instagram</a
+            >
+          </li>
+          <li class="footer__texto">
+            <a
+              href="https://wa.me/3834839711? text=Quiero solicitar un turno"
+              target="_blank"
+              >WhatsApp</a
+            >
+          </li>
+          <li class="footer__texto">
+            <a href="#menu">Volver al menú</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
