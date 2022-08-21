@@ -10,6 +10,7 @@
       href="./../piezasGraficas/favicon2.png"
       type="image/x-icon"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./../styles/style.css" />
   </head>
   <body>
@@ -36,8 +37,8 @@
     </header>
     <main class="main">
       <div class="encabezado">
-        <h1 class="encabezado__titulo">• PRODUCTOS •</h1>
-        <h3 class="encabezado__parrafo">
+        <h1 class="encabezado__titulo" data-aos="zoom-in">• PRODUCTOS •</h1>
+        <h3 class="encabezado__parrafo" data-aos="zoom-in">
           Lidherma es una empresa Argentina que desde 1989 es líder en la creación de productos cosméticos para uso profesional. 
           Sus productos siempre se deben usar mediante la recomendación de un profesional de la estética, quien determinará cuál es la mejor opción entre los más de 200 productos disponibles para el cuidado de tu piel.
           <br>
@@ -46,7 +47,7 @@
         </h3>
       </div>
       <section class="section">
-        <div class="producto producto1">
+        <div class="producto producto1" data-aos="zoom-in">
           <img class="producto__imagen"
           src="./../piezasGraficas/producto-1.png"
           alt="Silver Age Night Cream"
@@ -56,7 +57,7 @@
           <p class="producto__texto">Crema emoliente con Calcio y Antioxidantes
             Contiene un conjunto de nutrientes que le proporcionan a la piel un aspecto joven, turgente y saludable.</p>
         </div>
-        <div class="producto producto2">
+        <div class="producto producto2" data-aos="zoom-in">
           <img class="producto__imagen"
           src="./../piezasGraficas/producto-2.png"
           alt="Silver Age Night Cream"
@@ -65,7 +66,7 @@
           <h3 class="producto__titulo">SILVER AGE DAY CREAM</h3>
           <p class="producto__texto">Crema hidratante que repone Calcio y Vitamina D. Formulada con cronopéptidos que ayudan a equilibrar los niveles de Vitamina D y resincronizar los ritmos circadianos de la piel.</p>
         </div>
-        <div class="producto producto3">
+        <div class="producto producto3" data-aos="zoom-in">
           <img class="producto__imagen"
           src="./../piezasGraficas/producto-3.png"
           alt="Mimika Look Liner"
@@ -75,7 +76,7 @@
           <p class="producto__texto">Delineador liquido.
             Delineador de ojos larga duración con alto poder cubritivo, excelente adherencia y secado rápido. Otorga un delineado intenso.</p>
         </div>
-        <div class="producto producto4">
+        <div class="producto producto4" data-aos="zoom-in">
           <img class="producto__imagen"
           src="./../piezasGraficas/producto-4.png"
           alt="Mimika Radiant Primer"
@@ -84,7 +85,7 @@
           <h3 class="producto__titulo">MIMIKA RADIANT PRIMER</h3>
           <p class="producto__texto">Prebase hidratante con Ácido Hialurónico. Prolonga la duración del maquillaje. Contiene pigmentos que por su efecto óptico proporcionan a la piel una apariencia más lisa y luminosa.</p>
         </div>
-        <div class="producto producto5">
+        <div class="producto producto5" data-aos="zoom-in">
           <img class="producto__imagen"
           src="./../piezasGraficas/producto-5.png"
           alt="Hyaluronic 4D Cleansing Foam"
@@ -93,7 +94,7 @@
           <h3 class="producto__titulo">HYALURONIC 4D CLEANSING FOAM</h3>
           <p class="producto__texto">Mousse de limpieza facial formulada con tensioactivos suaves y Cera de Jojoba de última generación. Remueve el maquillaje y las impurezas, y brinda suavidad y emoliencia a la piel. </p>
         </div>
-        <div class="producto producto6">
+        <div class="producto producto6" data-aos="zoom-in">
           <img class="producto__imagen"
           src="./../piezasGraficas/producto-6.png"
           alt="Retinol A+ Cream"
@@ -103,7 +104,7 @@
         <p class="producto__texto">Crema con un gran efecto renovador y emoliente.
           Formulada con retinol y aceite de abisinia, renueva la piel y mantiene su humectación. Ayuda aprevenir los signos de envejecimiento cutáneo.</p>
       </div>
-      <div class="producto producto7">
+      <div class="producto producto7" data-aos="zoom-in">
         <img class="producto__imagen"
         src="./../piezasGraficas/producto-7.png"
         alt="Skinbioma Face Mask"
@@ -112,7 +113,7 @@
         <h3 class="producto__titulo">SKINBIOMA FACE MASK</h3>
         <p class="producto__texto">Máscara facial de suave emoliencia que ayuda a reparar e hidratar la piel. Contiene un complejo prebiótico hidratante que mantiene el equilibrio de la flora bacteriana que protege la salud de la piel.</p>
       </div>
-      <div class="producto producto8">
+      <div class="producto producto8" data-aos="zoom-in">
         <img class="producto__imagen"
         src="./../piezasGraficas/producto-8.png"
         alt="Detoxify Charcoal Mask"
@@ -122,7 +123,7 @@
       <p class="producto__texto">Crema gel con propiedades desintoxicantes, capaz de adsorber toxinas. Tiene acción purificante y antioxidante. Extrae las impurezas de la barrera epicutánea y ayuda a la reparación de la piel.</p>
     </div>
       </section>
-      <table>
+      <table data-aos="zoom-in">
         <thead>
           <tr>
             <th>Forma de pago</th>
@@ -192,5 +193,9 @@
         </ul>
       </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

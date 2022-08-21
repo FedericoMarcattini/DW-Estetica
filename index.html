@@ -10,6 +10,7 @@
       href="./piezasGraficas/favicon2.png"
       type="image/x-icon"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body class="body">
@@ -36,40 +37,41 @@
         
       </nav>
     </header>
-    <div class="slider">
-      <ul>
-        <li>
-          <img
+    <main class="main">
+      <div class="slider">
+        <ul>
+          <li>
+            <img
             src="./piezasGraficas/Slider-1.png"
             alt="sliderPrincipal"
             title="Slider Principal"
-          />
-        </li>
-        <li>
-          <img
+            />
+          </li>
+          <li>
+            <img
             src="./piezasGraficas/Slider-2.png"
             alt="sliderProductos"
             title="Slider Productos"
-          />
-        </li>
-        <li>
-          <img
+            />
+          </li>
+          <li>
+            <img
             src="./piezasGraficas/Slider-3.png"
             alt="sliderTratamientos"
             title="Slider Tratamientos"
-          />
-        </li>
-        <li>
-          <img
+            />
+          </li>
+          <li>
+            <img
             src="./piezasGraficas/Slider-4.png"
             alt="sliderBelleza"
             title="Slider Belleza"
-          />
-        </li>
-      </ul>
-    </div>
+            />
+          </li>
+        </ul>
+      </div>
     <section class="index">
-      <article class="contenido tarjeta1">
+      <article class="contenido tarjeta1" data-aos="zoom-in">
         <h2 class="contenido__titulo">
           <strong>Belleza Integral</strong>
         </h2>
@@ -85,8 +87,8 @@
           tratamientos aplicables.
         </p>
       </article>
-
-      <article class="contenido tarjeta2">
+      
+      <article class="contenido tarjeta2" data-aos="zoom-in">
         <h2 class="contenido__titulo">
           <strong>Experiencia Unica</strong>
         </h2>
@@ -102,8 +104,8 @@
           a los resultados y objetivos logrados.
         </p>
       </article>
-
-      <article class="contenido tarjeta3">
+      
+      <article class="contenido tarjeta3" data-aos="zoom-in">
         <h2 class="contenido__titulo">
           <strong>Salud, Belleza y Bienestar</strong>
         </h2>
@@ -120,8 +122,8 @@
           belleza.
         </p>
       </article>
-
-      <article class="contenido tarjeta4">
+      
+      <article class="contenido tarjeta4" data-aos="zoom-in">
         <h2 class="contenido__titulo">
           <strong>Valores de "Mi Piel con Salud"</strong>
         </h2>
@@ -143,45 +145,46 @@
     <br />
     <div class="whatsapp">
       <a
-        href="https://wa.me/3834839711? text=Quiero solicitar un turno"
-        target="_blank"
+      href="https://wa.me/3834839711? text=Quiero solicitar un turno"
+      target="_blank"
       >
-        <img
-          class="whatsapp__flotante"
-          src="./piezasGraficas/logo whatsapp.png"
-          alt="WhatsApp Logo"
-          title="WhatsApp Logo"
-        />
-      </a>
-      <a
+      <img
+      class="whatsapp__flotante"
+      src="./piezasGraficas/logo whatsapp.png"
+      alt="WhatsApp Logo"
+      title="WhatsApp Logo"
+      />
+    </a>
+        <a
         class="whatsapp__boton"
         href="https://wa.me/3834839711? text=Quiero solicitar un turno"
         target="_blank"
-      >
+        >
         <h4>Turnos por Whatsapp</h4>
       </a>
     </div>
-    <footer>
-      <div class="footer">
-        <p class="footer__autoria">
-          Sitio Desarrollado por Federico Marcattini
-        </p>
-        <ul class="footer__redes">
-          <li class="footer__texto">
-            <a href="./pages/contacto.html">Contacto</a>
+  </main>
+  <footer>
+    <div class="footer">
+      <p class="footer__autoria">
+        Sitio Desarrollado por Federico Marcattini
+      </p>
+      <ul class="footer__redes">
+        <li class="footer__texto">
+          <a href="./pages/contacto.html">Contacto</a>
+        </li>
+        <li class="footer__texto">
+          <a
+          href="https://instagram.com/mipielconsalud?igshid=YmMyMTA2M2Y="
+          target="_blank"
+          >Instagram</a
+          >
           </li>
           <li class="footer__texto">
             <a
-              href="https://instagram.com/mipielconsalud?igshid=YmMyMTA2M2Y="
-              target="_blank"
-              >Instagram</a
-            >
-          </li>
-          <li class="footer__texto">
-            <a
-              href="https://wa.me/3834839711? text=Quiero solicitar un turno"
-              target="_blank"
-              >WhatsApp</a
+            href="https://wa.me/3834839711? text=Quiero solicitar un turno"
+            target="_blank"
+            >WhatsApp</a
             >
           </li>
           <li class="footer__texto">
@@ -190,5 +193,10 @@
         </ul>
       </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
-</html>
+  </html>
+  

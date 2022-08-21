@@ -123,13 +123,13 @@
     border-radius: 15px;
     margin-top: 30px;
     transition: transform 0.5s ease;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
     }
 
 .contenido:hover {
     background-color: #ffffff;
     outline: 2px inset #343434;
     transform: translate(5px , 5px);
-    
 }
 
 .contenido__titulo {
@@ -171,6 +171,7 @@
     width: 100%;
     height: 100%;
     transition: transform 0.5s ease;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
     
 .producto1 { 
@@ -292,6 +293,7 @@
     margin-top: auto;
     margin-bottom: auto;
     transition: transform 0.5s ease;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
 .tratamientos:hover {
@@ -339,6 +341,7 @@
     gap: 45px;
     padding: 10px;
     transition: transform 0.5s ease;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
 .belleza:hover {
@@ -412,7 +415,8 @@
 
 .main {
     width: 100%;
-    background-color: #e4aaaa;
+    background: rgb(228,170,170);
+background: linear-gradient(180deg, rgba(228,170,170,1) 13%, rgba(163,212,222,1) 100%);
 }
 
 /* TITULOS Y PARRAFOS PRINCIPALES */
@@ -456,7 +460,7 @@ tr:nth-child(even) {
 
 .contenido-contacto {
     display: flex;
-    padding: 30px;
+    padding: 0 30px 30px 30px;
 }
 
 .mapa-contacto {
@@ -690,13 +694,19 @@ input, textarea, select {
 
     .section {  
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat(4, 1fr);
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(8, 1fr);
         grid-template-areas:
-            "producto1 producto2"
-            "producto3 producto4"
-            "producto5 producto6"
-            "producto7 producto8";
+            "producto1"
+            "producto2"
+            "producto3"
+            "producto4"
+            "producto5"
+            "producto6"
+            "producto7"
+            "producto8";
+            width: 80%;
+            margin-inline: auto;
     }
 
     /* TABLAS */
@@ -736,7 +746,7 @@ input, textarea, select {
         background-color: white;
         display: flex;
         flex-direction: column;
-        width: 50%;
+        width: 79%;
         height: 100%;
         overflow: hidden;
         gap: 5px;
