@@ -1,0 +1,82 @@
+.section {
+    padding: 30px 80px 30px 80px;  
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr;
+    gap: 30px;
+    justify-items: center;
+    align-items: center;
+    grid-template-areas:
+        "producto1 producto2 producto3 producto4"
+        "producto5 producto6 producto7 producto8";
+
+        .producto {
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            background-color: #ffffff;
+            border-radius: 30px;
+            gap: 10px;
+            text-align: center;
+            flex: 1;
+            width: 100%;
+            height: 100%;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+            transition: transform 0.5s ease;
+
+            &:hover {
+                background-color: #e4aaaa;
+                outline: 2px inset black;
+                transform: translate(5px , 5px) !important;
+            }
+
+            .producto__imagen {
+                max-width: 100%;
+                background-color: #777777;
+            }
+            
+            .producto__titulo {
+                font-size: 18px;
+                padding-bottom: 10px;
+                padding-inline: 15px;
+            }
+            
+            .producto__texto {
+                font-size: 16px;
+                padding-bottom: 30px;
+                padding-inline: 15px;
+            }
+        }
+            
+        .producto1 { 
+            grid-area: producto1;
+        }
+        
+        .producto2 { 
+            grid-area: producto2;
+        }
+        
+        .producto3 { 
+            grid-area: producto3;
+        }
+        
+        .producto4 { 
+            grid-area: producto4;
+        }
+        
+        .producto5 { 
+            grid-area: producto5;
+        }
+        
+        .producto6 { 
+            grid-area: producto6;
+        }
+        
+        .producto7 { 
+            grid-area: producto7;
+        }
+        
+        .producto8 { 
+            grid-area: producto8;
+        }
+}

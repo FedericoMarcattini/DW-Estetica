@@ -1,0 +1,22 @@
+.whatsapp {
+    
+    .whatsapp__flotante {
+        width: 50px;
+        position: fixed;
+        bottom: 8%;
+        right: 1%;
+    }
+    
+    .whatsapp__boton {
+        color: black;
+        text-decoration: none;
+        background-color: #8af37a;
+        border: solid 2px #1ab70c;
+        border-radius: 15px;
+        padding-inline: 13px;
+        padding-block: 7px;
+        position: fixed;
+        bottom: 9%;
+        right: 5.5%;
+    }
+}

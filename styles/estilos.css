@@ -72,7 +72,7 @@ html {
     border-radius: 15px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
     transition: transform 0.5s ease;
-    }
+}
 
 .contenido:hover {
     background-color: #ffffff;
@@ -90,6 +90,8 @@ html {
     font-size: 16px;
     text-align: center;
 }
+
+/* HASTA AQUI PASAMOS A SCSS */
 
 /* PRODUCTOS */
 
@@ -494,7 +496,7 @@ input, textarea, select {
 .input:focus {
     border-color: rgb(61, 61, 61);
 }
-
+/* ------- */
 .form {
     display: flex;
     flex-direction: column;
@@ -692,23 +694,23 @@ input, textarea, select {
     }
 
     /* IFRAME MAPS Y DATOS DE CONTACTO */
+    
+    .contenido-contacto {
+            padding: 0;
+            margin-left: auto;
+            margin-right: auto;
+            justify-content: center;
+        }
+        
+    .mapa-contacto {
+            padding: 0;
+        }
 
     .maps {
         width: 330px;
         height: 350px;
         margin-left: auto;
         margin-right: auto;
-    }
-
-    .mapa-contacto {
-        padding: 0;
-    }
-
-    .contenido-contacto {
-        padding: 0;
-        margin-left: auto;
-        margin-right: auto;
-        justify-content: center;
     }
 
     .whatsapp-instagram {

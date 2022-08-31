@@ -1,0 +1,29 @@
+{
+  "name": "dw-estetica",
+  "version": "1.0.0",
+  "description": "desarrollo pagina web estetica",
+  "main": "index.html",
+  "scripts": {
+    "build-css":"node-sass --include-path scss styles/scss/style-scss.scss styles/css/style.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FedericoMarcattini/DW-Estetica.git"
+  },
+  "keywords": [
+    "npm",
+    "init",
+    "estetica"
+  ],
+  "author": "Federico Marcattini",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FedericoMarcattini/DW-Estetica/issues"
+  },
+  "homepage": "https://github.com/FedericoMarcattini/DW-Estetica#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.19"
+  }
+}

@@ -1,0 +1,79 @@
+.tratamientos__container {  
+    padding-inline: 80px;
+    padding-bottom: 20px;
+    display: grid;
+    gap: 20px 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+        "tratamiento1 tratamiento2 tratamiento3"
+        "tratamiento4 tratamiento5 tratamiento6"
+        "tratamiento7 tratamiento8 tratamiento9";
+    width: 100%;
+    height: 100%;
+
+    .tratamientos {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 15px;
+        background-color: #ffffff;
+        border-radius: 15px;
+        text-align: center;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+        transition: transform 0.5s ease;
+
+        &:hover {
+            background-color: #e4aaaa;
+            outline: 2px inset black;
+            transform: translate(5px , 5px) !important;
+        }
+
+        .tratamientos__titulo {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        
+        .tratamientos___parrafo {
+            font-size: 22px;
+        }
+    }
+
+    .tratamiento1 { 
+        grid-area: tratamiento1;
+    }
+    
+    .tratamiento2 { 
+        grid-area: tratamiento2;
+    }
+    
+    .tratamiento3 { 
+        grid-area: tratamiento3;
+    }
+    
+    .tratamiento4 { 
+        grid-area: tratamiento4;
+    }
+    
+    .tratamiento5 { 
+        grid-area: tratamiento5;
+    }
+    
+    .tratamiento6 { 
+        grid-area: tratamiento6;
+    }
+    
+    .tratamiento7 { 
+        grid-area: tratamiento7;
+    }
+    
+    .tratamiento8 { 
+        grid-area: tratamiento8;
+    }
+    
+    .tratamiento9 { 
+        grid-area: tratamiento9;
+    }
+}

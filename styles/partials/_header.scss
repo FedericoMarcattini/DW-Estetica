@@ -1,0 +1,20 @@
+.header {
+    background-color: $bg-header;
+
+    .navbar {
+        padding-right: 100px;
+
+        .header__logo {
+            width: 180px;
+            margin-left: 40px;
+        }
+
+        .navbar-collapse {
+            flex-grow: 0;
+
+            .navbar-nav {
+                font-size: 18px;
+            }
+        }
+    }
+}

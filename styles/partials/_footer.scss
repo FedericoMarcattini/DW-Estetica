@@ -1,0 +1,34 @@
+.footer {
+    background-color: #343434;
+    padding: 15px 15px 0 15px;
+    display: grid;
+    grid-template-columns: 1f 3fr;
+    grid-template-areas: 
+        "autoria    redes";
+    justify-content: space-around;
+
+    .footer__autoria {
+        grid-area: autoria;
+        margin-left: 20px;
+        color: white;
+    }
+    
+    .footer__redes {
+        grid-area: redes;
+        margin-right: 30px;
+
+        .footer__texto {
+            display:inline-block;
+            margin-inline: 20px;
+        }
+
+        li a {
+            color: #e47070;
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline double;
+            }
+        }
+    }
+}
