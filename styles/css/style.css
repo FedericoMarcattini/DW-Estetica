@@ -362,17 +362,17 @@ html {
   /*HEADER*/
   .row > * {
     width: 550px; }
-  .navbar {
-    padding-right: 20px; }
-    .navbar .navbar-collapse {
-      padding-left: 20px; }
-    .navbar .navbar-toggler {
-      border: solid 1px whitesmoke; }
-    .navbar .header__logo {
-      width: 200px;
-      margin-top: 10px;
-      margin-left: 10px;
+  .header .navbar {
+    padding: 0 30px 0 0;
+    margin: 0; }
+    .header .navbar .header__logo {
+      width: 180px;
+      margin-left: 0;
       padding: 0; }
+    .header .navbar .navbar-collapse {
+      padding-left: 20px; }
+    .header .navbar .navbar-toggler {
+      border: solid 1px whitesmoke; }
   /* CONTENIDO INDEX */
   .index {
     padding: 30px 40px 30px 40px;
@@ -410,7 +410,7 @@ html {
     grid-template-areas: "tratamiento1" "tratamiento2" "tratamiento3" "tratamiento4" "tratamiento5" "tratamiento6" "tratamiento7" "tratamiento8" "tratamiento9";
     gap: 30px; }
   /* BELLEZA */
-  .belleza {
+  .tarjetasHorizontales .belleza {
     background-color: white;
     display: flex;
     flex-direction: column;
@@ -420,7 +420,7 @@ html {
     gap: 5px;
     padding-inline: 10px;
     text-align: center; }
-    .belleza .belleza__imagen {
+    .tarjetasHorizontales .belleza .belleza__imagen {
       max-width: 100%;
       max-height: 100%;
       overflow: hidden;
@@ -428,9 +428,9 @@ html {
       margin-right: auto;
       margin-top: 0px;
       margin-bottom: 0px; }
-    .belleza .belleza__texto .belleza__titulo {
+    .tarjetasHorizontales .belleza .belleza__titulo {
       color: black; }
-    .belleza .belleza__texto .belleza__parrafo {
+    .tarjetasHorizontales .belleza .belleza__parrafo {
       color: black;
       margin-bottom: 0; }
   /* IFRAME MAPS Y DATOS DE CONTACTO */
@@ -446,20 +446,29 @@ html {
         height: 350px;
         margin-left: auto;
         margin-right: auto; }
-    .contenido-contacto .whatsapp-instagram {
-      padding: 0px;
-      margin: 0;
-      justify-content: center; }
-      .contenido-contacto .whatsapp-instagram .insta {
-        padding-inline: 5px; }
-      .contenido-contacto .whatsapp-instagram .whatsappLogo, .contenido-contacto .whatsapp-instagram .instagramLogo {
-        margin-top: 10px;
-        width: 25px; }
-        .contenido-contacto .whatsapp-instagram .whatsappLogo .textoContacto, .contenido-contacto .whatsapp-instagram .instagramLogo .textoContacto {
-          font-size: 14px;
-          margin-top: 10px; }
+      .contenido-contacto .mapa-contacto .whatsapp-instagram {
+        padding: 20px 20px 10px 20px;
+        margin: 0;
+        gap: 20px;
+        row-gap: 20px;
+        justify-content: center; }
+        .contenido-contacto .mapa-contacto .whatsapp-instagram .insta {
+          padding-inline: 5px; }
+          .contenido-contacto .mapa-contacto .whatsapp-instagram .insta .instagramLogo {
+            margin-top: 0;
+            width: 35px; }
+            .contenido-contacto .mapa-contacto .whatsapp-instagram .insta .instagramLogo .textoContacto {
+              margin-top: 10px; }
+        .contenido-contacto .mapa-contacto .whatsapp-instagram .wpp {
+          margin: 0; }
+          .contenido-contacto .mapa-contacto .whatsapp-instagram .wpp .whatsappLogo {
+            margin-top: 0;
+            width: 35px; }
+            .contenido-contacto .mapa-contacto .whatsapp-instagram .wpp .whatsappLogo .textoContacto {
+              margin-top: 10px; }
   /* FORMULARIO DE CONTACTO */
   .form {
+    max-width: 350px;
     width: 350px;
     padding: 0px; }
     .form .form__button {
@@ -482,7 +491,7 @@ html {
   /* BOTON FLOTANTE WHATSAPP */
   .whatsapp__flotante {
     bottom: 0;
-    margin: 0 20px 14px 0; }
+    margin: 0 20px 20px 0; }
   .whatsapp__boton {
     display: none; }
   /* FOOTER */
@@ -495,11 +504,13 @@ html {
       padding: 0;
       margin-left: auto;
       margin-right: auto; }
-    .footer .footer__texto {
-      padding-inline: 5px;
-      margin-inline: 0px; }
+      .footer .footer__redes .footer__texto {
+        padding-inline: px;
+        margin-inline: 10px;
+        font-size: 14px; }
     .footer .footer__autoria {
       padding-bottom: 12px;
       margin-bottom: 0;
       margin-left: auto;
-      margin-right: auto; } }
+      margin-right: auto;
+      font-size: 14px; } }
