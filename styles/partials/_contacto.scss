@@ -43,9 +43,9 @@
             }
             
             .insta {
-                display: flex;
+                @extend .wpp;
+                margin: 0;
                 padding-inline: 40px;
-                align-items: center;
 
                 .instagramLogo {
                     width: 40px;

@@ -29,10 +29,8 @@
             transition: transform 0.5s ease;
 
             &:hover {
-                background-color: white;
-                outline: 2px inset black;
+                @include hover(white, 2px inset black, translate(5px, 5px));
                 color: black;
-                transform: translate(5px , 5px) !important;
             }
 
             .belleza__imagen {

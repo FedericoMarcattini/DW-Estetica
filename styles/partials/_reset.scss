@@ -5,6 +5,11 @@
     font-family: $font;
 }
 
+*::selection {
+    background-color: #343434;
+    color: #e47070;
+}
+
 html {
     scroll-behavior: smooth;
 }

@@ -25,9 +25,7 @@
             transition: transform 0.5s ease;
 
             &:hover {
-                background-color: #e4aaaa;
-                outline: 2px inset black;
-                transform: translate(5px , 5px) !important;
+                @include hover(#e4aaaa, 2px inset black, translate(5px, 5px));
             }
 
             .producto__imagen {
