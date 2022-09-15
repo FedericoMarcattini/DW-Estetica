@@ -1,4 +1,4 @@
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 992px) {
 
     /*HEADER*/
 
@@ -28,21 +28,6 @@
     }
 }
 
-    /* CONTENIDO INDEX */
-
-    .index {
-        padding: 30px 40px 30px 40px;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(4, 1fr);
-        gap: 30px;
-        grid-template-areas:
-            "tarjeta1"
-            "tarjeta2"
-            "tarjeta3"
-            "tarjeta4";
-        justify-items: center;
-    } 
-
     /* ENCABEZADOS */
 
     .encabezado__titulo {
@@ -53,10 +38,8 @@
         font-size: 16px;
     }
 
-    /* TABLAS */
-
     .tabla {
-        width: 90%;
+        width: 70%;
         font-size: 13px;
     }
 
@@ -64,176 +47,17 @@
 
     .section {  
         display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(8, 1fr);
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(4, 1fr);
         grid-template-areas:
-            "producto1"
-            "producto2"
-            "producto3"
-            "producto4"
-            "producto5"
-            "producto6"
-            "producto7"
-            "producto8";
+            "producto1  producto2"
+            "producto3  producto4"
+            "producto5  producto6"
+            "producto7  producto8";
             width: 100%;
             padding-inline: 60px;
             margin-inline: auto;
     }
-
-    /* TRATAMIENTOS */
-
-    .tratamientos__container {
-        width: 100%;
-        padding-inline: 40px;
-        margin-right: auto;
-        margin-left: auto;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(9, 1fr);
-        grid-template-areas:
-        "tratamiento1"
-        "tratamiento2"
-        "tratamiento3"
-        "tratamiento4"
-        "tratamiento5"
-        "tratamiento6"
-        "tratamiento7"
-        "tratamiento8"
-        "tratamiento9";
-        gap: 30px;
-    }
-
-    /* BELLEZA */
-
-    .tarjetasHorizontales {
-
-        .belleza {
-            background-color: white;
-            display: flex;
-            flex-direction: column;
-            width: 70%;
-            height: 100%;
-        overflow: hidden;
-        gap: 5px;
-        padding-inline: 10px;
-        text-align: center;
-        
-        .belleza__imagen {
-            max-width: 100%;
-            max-height: 100%;
-            overflow: hidden;
-            margin-left: auto;
-            margin-right: auto;
-            margin-top: 0px;
-            margin-bottom: 0px;
-        }
-        
-
-            .belleza__titulo {
-                color: black;
-            }
-            
-            .belleza__parrafo {
-                color: black;
-                margin-bottom: 0;
-            }
-    }
-}
-
-        /* IFRAME MAPS Y DATOS DE CONTACTO */
-    
-        .contenido-contacto {
-            padding: 0;
-            margin-left: auto;
-            margin-right: auto;
-            justify-content: center;
-
-            .mapa-contacto {
-                padding: 0;
-
-                .maps {
-                    width: 330px;
-                    height: 350px;
-                    margin-left: auto;
-                    margin-right: auto;
-                }
-
-                .whatsapp-instagram {
-                    padding: 20px 20px 10px 20px;
-                    margin: 0;
-                    gap: 20px;
-                    row-gap: 20px;
-                    justify-content: center;
-                    
-                    .insta {
-                        padding-inline: 5px;
-
-                        .instagramLogo {
-                            margin-top: 0;
-                            width: 35px;
-        
-                            .textoContacto {
-                                margin-top: 10px;
-                            }
-                        }
-                    }
-    
-                    .wpp {
-                        margin: 0;
-
-                        .whatsappLogo {
-                            margin-top: 0;
-                            width: 35px;
-        
-                            .textoContacto {
-                                margin-top: 10px;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-
-        /* FORMULARIO DE CONTACTO */
-
-        .form {
-            max-width: 350px;
-            width: 350px;
-            padding: 0;
-
-            .form__button {
-                margin-top: 0;
-            }
-
-            input, textarea, select {
-                width: 100%;
-            }
-
-            .form__label {
-                padding-bottom: 10px;
-            }
-        
-            .select {
-                padding: 4px;
-            }
-        }
-
-        .ms-5 {
-            margin: 30px!important;
-
-            .mt-4 {
-                margin-top: 0,5rem!important;
-            }    
-        }
-
-        
-        .boton {
-            padding: 15px 0 15px 0;
-            width: 100%;
-
-            .mt-3 {
-                margin-top: 0!important;
-            }
-        }
 
         /* BOTON FLOTANTE WHATSAPP */
 
@@ -276,4 +100,213 @@
                     font-size: 14px;
                 }
             }
+}
+
+@media screen and (max-width: 600px) {
+
+    /* CONTENIDO INDEX */
+
+    .slider {
+        display: none;
+    }
+
+    .sliderMobile {
+        display: block;
+    }
+
+    .index {
+        padding: 30px 40px 30px 40px;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        gap: 30px;
+        grid-template-areas:
+            "tarjeta1"
+            "tarjeta2"
+            "tarjeta3"
+            "tarjeta4";
+        justify-items: center;
+    } 
+
+        /* TABLAS */
+
+        .tabla {
+            width: 90%;
+            font-size: 13px;
+        }
+
+    /* PRODUCTOS */
+
+    .section {  
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(8, 1fr);
+        grid-template-areas:
+            "producto1"
+            "producto2"
+            "producto3"
+            "producto4"
+            "producto5"
+            "producto6"
+            "producto7"
+            "producto8";
+            width: 100%;
+            padding-inline: 60px;
+            margin-inline: auto;
+    }
+
+        /* TRATAMIENTOS */
+
+        .tratamientos__container {
+            width: 100%;
+            padding-inline: 40px;
+            margin-right: auto;
+            margin-left: auto;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(9, 1fr);
+            grid-template-areas:
+            "tratamiento1"
+            "tratamiento2"
+            "tratamiento3"
+            "tratamiento4"
+            "tratamiento5"
+            "tratamiento6"
+            "tratamiento7"
+            "tratamiento8"
+            "tratamiento9";
+            gap: 30px;
+        }
+
+            /* BELLEZA */
+
+    .tarjetasHorizontales {
+
+        .belleza {
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            width: 70%;
+            height: 100%;
+            overflow: hidden;
+            gap: 5px;
+            padding-inline: 10px;
+            text-align: center;
+        
+        .belleza__imagen {
+            max-width: 100%;
+            max-height: 100%;
+            overflow: hidden;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 0px;
+            margin-bottom: 0px;
+            }
+        
+
+            .belleza__titulo {
+                color: black;
+            }
+            
+            .belleza__parrafo {
+                color: black;
+                margin-bottom: 0;
+            }
+        }
+    }
+
+            /* IFRAME MAPS Y DATOS DE CONTACTO */
+    
+            .contenido-contacto {
+                padding: 0;
+                margin-left: auto;
+                margin-right: auto;
+                justify-content: center;
+    
+                .mapa-contacto {
+                    padding: 0;
+    
+                    .maps {
+                        width: 330px;
+                        height: 350px;
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
+    
+                    .whatsapp-instagram {
+                        padding: 20px 20px 10px 20px;
+                        margin: 0;
+                        gap: 20px;
+                        row-gap: 20px;
+                        justify-content: center;
+                        
+                        .insta {
+                            padding-inline: 5px;
+    
+                            .instagramLogo {
+                                margin-top: 0;
+                                width: 35px;
+            
+                                .textoContacto {
+                                    margin-top: 10px;
+                                }
+                            }
+                        }
+        
+                        .wpp {
+                            margin: 0;
+    
+                            .whatsappLogo {
+                                margin-top: 0;
+                                width: 35px;
+            
+                                .textoContacto {
+                                    margin-top: 10px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+    
+            /* FORMULARIO DE CONTACTO */
+    
+            .form {
+                max-width: 350px;
+                width: 350px;
+                padding: 0;
+    
+                .form__button {
+                    margin-top: 0;
+                }
+    
+                input, textarea, select {
+                    width: 100%;
+                }
+    
+                .form__label {
+                    padding-bottom: 10px;
+                }
+            
+                .select {
+                    padding: 4px;
+                }
+            }
+    
+            .ms-5 {
+                margin: 30px!important;
+    
+                .mt-4 {
+                    margin-top: 0,5rem!important;
+                }    
+            }
+    
+            
+            .boton {
+                padding: 15px 0 15px 0;
+                width: 100%;
+    
+                .mt-3 {
+                    margin-top: 0!important;
+                }
+            }
+
 }
