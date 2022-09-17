@@ -1,7 +1,7 @@
 .main {
     width: 100%;
-    background: rgb(228,170,170);
-    background: linear-gradient(180deg, rgba(228,170,170,1) 13%, rgba(163,212,222,1) 100%);
+    background: rgb(228, 170, 170);
+    background: linear-gradient(180deg, rgba(228, 170, 170, 1) 13%, rgba(163, 212, 222, 1) 100%);
 }
 
 /* TITULOS Y PARRAFOS PRINCIPALES */
@@ -10,8 +10,20 @@
     @extend %encabezados;
 
     .encabezado__parrafo {
-        animation:slide-in-elliptic-right-fwd .7s cubic-bezier(.25,.46,.45,.94) both;
+        animation: slide-in-elliptic-right-fwd .7s cubic-bezier(.25, .46, .45, .94) both;
     }
 }
 
-@keyframes slide-in-elliptic-right-fwd{0%{transform:translateX(800px) rotateY(-30deg) scale(0);transform-origin:-100% 50%;opacity:0}100%{transform:translateX(0) rotateY(0) scale(1);transform-origin:-1800px 50%;opacity:1}}
+@keyframes slide-in-elliptic-right-fwd {
+    0% {
+        transform: translateX(800px) rotateY(-30deg) scale(0);
+        transform-origin: -100% 50%;
+        opacity: 0
+    }
+
+    100% {
+        transform: translateX(0) rotateY(0) scale(1);
+        transform-origin: -1800px 50%;
+        opacity: 1
+    }
+}

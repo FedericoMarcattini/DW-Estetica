@@ -2,7 +2,7 @@
 
     /*HEADER*/
 
-    .row > * {
+    .row>* {
         width: 550px;
     }
 
@@ -13,30 +13,32 @@
             margin: 0;
 
             .header__logo {
-                width: 180px;
+                width: 150px;
                 margin-left: 0;
                 padding: 0;
             }
 
             .navbar-collapse {
-            padding-left: 20px;
+                padding-left: 20px;
             }
 
             .navbar-toggler {
                 border: solid 1px whitesmoke;
             }
+        }
     }
-}
 
     /* ENCABEZADOS */
 
     .encabezado__titulo {
         font-size: 28px;
     }
-    
+
     .encabezado__parrafo {
         font-size: 16px;
     }
+
+    /* TABLAS */
 
     .tabla {
         width: 70%;
@@ -45,7 +47,7 @@
 
     /* PRODUCTOS */
 
-    .section {  
+    .section {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: repeat(4, 1fr);
@@ -54,52 +56,49 @@
             "producto3  producto4"
             "producto5  producto6"
             "producto7  producto8";
-            width: 100%;
-            padding-inline: 60px;
-            margin-inline: auto;
+        width: 100%;
+        padding-inline: 60px;
+        margin-inline: auto;
     }
 
-        /* BOTON FLOTANTE WHATSAPP */
+    /* BOTON FLOTANTE WHATSAPP */
 
-        .whatsapp__flotante {
-            bottom: 0;
-            margin: 0 20px 20px 0;
-        }
+    .whatsapp__flotante {
+        bottom: 0;
+        margin: 0 20px 20px 0;
+    }
 
-        .whatsapp__boton {
-            display: none;
-        }
+    .whatsapp__boton {
+        display: none;
+    }
 
-        /* FOOTER */
+    /* FOOTER */
 
-        .footer {
-            grid-template-columns: 1fr;
-            grid-template-rows: 2fr;
-            grid-template-areas: 
-                "redes"
-                "autoria";
-                gap: 0px;
+    .footer {
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr;
+        grid-template-areas:
+            "redes"
+            "autoria";
+        gap: 0px;
+        padding-top: 12px;
+        justify-items: center;
 
-                .footer__redes {
-                    padding: 0;
-                    margin-left: auto;
-                    margin-right: auto;
+        .footer__redes {
+            padding: 0;
+            margin: 0;
 
-                    .footer__texto {
-                        padding-inline: px;
-                        margin-inline: 10px;
-                        font-size: 14px;
-                    }
-                }
-            
-                .footer__autoria {
-                    padding-bottom: 12px;
-                    margin-bottom: 0;
-                    margin-left: auto;
-                    margin-right: auto;
-                    font-size: 14px;
-                }
+            .footer__texto {
+                padding-inline: 0px;
+                margin-inline: 10px;
             }
+        }
+
+        .footer__autoria {
+            padding-block: 12px;
+            margin: 0;
+        }
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -125,18 +124,18 @@
             "tarjeta3"
             "tarjeta4";
         justify-items: center;
-    } 
+    }
 
-        /* TABLAS */
+    /* TABLAS */
 
-        .tabla {
-            width: 90%;
-            font-size: 13px;
-        }
+    .tabla {
+        width: 90%;
+        font-size: 13px;
+    }
 
     /* PRODUCTOS */
 
-    .section {  
+    .section {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(8, 1fr);
@@ -149,21 +148,21 @@
             "producto6"
             "producto7"
             "producto8";
-            width: 100%;
-            padding-inline: 60px;
-            margin-inline: auto;
+        width: 100%;
+        padding-inline: 60px;
+        margin-inline: auto;
     }
 
-        /* TRATAMIENTOS */
+    /* TRATAMIENTOS */
 
-        .tratamientos__container {
-            width: 100%;
-            padding-inline: 40px;
-            margin-right: auto;
-            margin-left: auto;
-            grid-template-columns: 1fr;
-            grid-template-rows: repeat(9, 1fr);
-            grid-template-areas:
+    .tratamientos__container {
+        width: 100%;
+        padding-inline: 40px;
+        margin-right: auto;
+        margin-left: auto;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(9, 1fr);
+        grid-template-areas:
             "tratamiento1"
             "tratamiento2"
             "tratamiento3"
@@ -173,10 +172,10 @@
             "tratamiento7"
             "tratamiento8"
             "tratamiento9";
-            gap: 30px;
-        }
+        gap: 30px;
+    }
 
-            /* BELLEZA */
+    /* BELLEZA */
 
     .tarjetasHorizontales {
 
@@ -190,22 +189,22 @@
             gap: 5px;
             padding-inline: 10px;
             text-align: center;
-        
-        .belleza__imagen {
-            max-width: 100%;
-            max-height: 100%;
-            overflow: hidden;
-            margin-left: auto;
-            margin-right: auto;
-            margin-top: 0px;
-            margin-bottom: 0px;
+
+            .belleza__imagen {
+                max-width: 100%;
+                max-height: 100%;
+                overflow: hidden;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 0px;
+                margin-bottom: 0px;
             }
-        
+
 
             .belleza__titulo {
                 color: black;
             }
-            
+
             .belleza__parrafo {
                 color: black;
                 margin-bottom: 0;
@@ -213,100 +212,118 @@
         }
     }
 
-            /* IFRAME MAPS Y DATOS DE CONTACTO */
-    
-            .contenido-contacto {
-                padding: 0;
-                margin-left: auto;
-                margin-right: auto;
-                justify-content: center;
-    
-                .mapa-contacto {
-                    padding: 0;
-    
-                    .maps {
-                        width: 330px;
-                        height: 350px;
-                        margin-left: auto;
-                        margin-right: auto;
-                    }
-    
-                    .whatsapp-instagram {
-                        padding: 20px 20px 10px 20px;
-                        margin: 0;
-                        gap: 20px;
-                        row-gap: 20px;
-                        justify-content: center;
-                        
-                        .insta {
-                            padding-inline: 5px;
-    
-                            .instagramLogo {
-                                margin-top: 0;
-                                width: 35px;
-            
-                                .textoContacto {
-                                    margin-top: 10px;
-                                }
-                            }
-                        }
-        
-                        .wpp {
-                            margin: 0;
-    
-                            .whatsappLogo {
-                                margin-top: 0;
-                                width: 35px;
-            
-                                .textoContacto {
-                                    margin-top: 10px;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-    
-            /* FORMULARIO DE CONTACTO */
-    
-            .form {
-                max-width: 350px;
-                width: 350px;
-                padding: 0;
-    
-                .form__button {
-                    margin-top: 0;
-                }
-    
-                input, textarea, select {
-                    width: 100%;
-                }
-    
-                .form__label {
-                    padding-bottom: 10px;
-                }
-            
-                .select {
-                    padding: 4px;
-                }
-            }
-    
-            .ms-5 {
-                margin: 30px!important;
-    
-                .mt-4 {
-                    margin-top: 0,5rem!important;
-                }    
-            }
-    
-            
-            .boton {
-                padding: 15px 0 15px 0;
-                width: 100%;
-    
-                .mt-3 {
-                    margin-top: 0!important;
-                }
+    /* IFRAME MAPS Y DATOS DE CONTACTO */
+
+    .contenido-contacto {
+        padding: 0;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+
+        .mapa-contacto {
+            padding: 0;
+            align-items: center;
+
+            .maps {
+                width: 330px;
+                height: 350px;
             }
 
+            .whatsapp-instagram {
+                padding: 20px 20px 10px 20px;
+                margin: 0;
+                gap: 20px;
+                row-gap: 20px;
+                justify-content: center;
+
+                .insta {
+                    padding-inline: 5px;
+
+                    .instagramLogo {
+                        margin-top: 0;
+                        width: 35px;
+
+                        .textoContacto {
+                            margin-top: 10px;
+                        }
+                    }
+                }
+
+                .wpp {
+                    margin: 0;
+
+                    .whatsappLogo {
+                        margin-top: 0;
+                        width: 35px;
+
+                        .textoContacto {
+                            margin-top: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /* FORMULARIO DE CONTACTO */
+
+    .form {
+        max-width: 350px;
+        width: 350px;
+        padding: 0;
+
+        .form__button {
+            margin-top: 0;
+        }
+
+        input,
+        textarea,
+        select {
+            width: 100%;
+        }
+
+        .form__label {
+            padding-bottom: 10px;
+        }
+
+        .select {
+            padding: 4px;
+        }
+    }
+
+    .ms-5 {
+        margin: 30px !important;
+
+        .mt-4 {
+            margin-top: 0, 5rem !important;
+        }
+    }
+
+
+    .boton {
+        padding: 15px 0 15px 0;
+        width: 100%;
+
+        .mt-3 {
+            margin-top: 0 !important;
+        }
+    }
+
+    /* FOOTER */
+
+    .footer {
+        padding-top: 8px;
+
+        .footer__redes {
+
+            .footer__texto {
+                font-size: 14px;
+            }
+        }
+
+        .footer__autoria {
+            padding-block: 8px;
+            font-size: 13px;
+        }
+    }
 }

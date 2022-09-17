@@ -13,7 +13,7 @@
             width: 600px;
             height: 450px;
         }
-        
+
         iframe {
             border-radius: 20px;
             padding: 2px;
@@ -24,7 +24,8 @@
             display: flex;
             flex-wrap: wrap;
             padding: 20px;
-            margin-left: 10%;
+            margin-left: 0;
+            justify-content: center;
 
             .wpp {
                 display: flex;
@@ -34,14 +35,14 @@
                 .whatsappLogo {
                     width: 40px;
                 }
-                
+
                 .textoContacto {
                     color: black;
                     text-decoration: none;
                     margin-inline: 10px;
                 }
             }
-            
+
             .insta {
                 @extend .wpp;
                 margin: 0;
@@ -64,7 +65,7 @@
         display: flex;
         flex-direction: column;
         width: 540px;
-        padding-top: 5px;
+        padding-top: 0px;
 
         .form__button {
             background-color: #393939;
@@ -82,7 +83,9 @@
             }
         }
 
-        input, textarea, select {
+        input,
+        textarea,
+        select {
             outline: none;
             border: solid 1px #343434;
             padding: 4px;
@@ -91,17 +94,19 @@
 
             &:focus {
                 border-color: rgb(61, 61, 61);
-            }   
+            }
         }
 
         .inputs {
             border-bottom-width: 3px;
         }
 
-        .form-control, .form-select {
+        .form-control,
+        .form-select {
             background-color: #77777700;
 
-            &:focus, &:focus {
+            &:focus,
+            &:focus {
                 background-color: #77777700;
                 box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
                 -moz-box-shadow: none;

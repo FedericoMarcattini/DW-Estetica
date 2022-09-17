@@ -8,7 +8,8 @@
     display: none;
 }
 
-.index {  display: grid;
+.index {
+    display: grid;
     padding: 30px 80px 30px 80px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -37,7 +38,7 @@
             text-align: center;
             margin-bottom: 20px;
         }
-        
+
         .contenido__parrafo {
             font-size: 16px;
             text-align: center;
@@ -47,16 +48,16 @@
     .tarjeta1 {
         grid-area: tarjeta1;
     }
-    
+
     .tarjeta2 {
         grid-area: tarjeta2;
     }
-    
+
     .tarjeta3 {
         grid-area: tarjeta3;
     }
-    
+
     .tarjeta4 {
         grid-area: tarjeta4;
     }
-} 
+}

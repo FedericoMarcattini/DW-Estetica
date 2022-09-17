@@ -1,29 +1,29 @@
     $tabla: (
-    bgtabla: white,
-    encabezado: #777777,
-    10descuesto: #e47070
-);
+        bgtabla: white,
+        encabezado: #777777,
+        10descuesto: #e47070
+    );
 
-.tabla {
-    width: 40%;
-    margin-left: auto;
-    margin-right: auto;
+    .tabla {
+        width: 40%;
+        margin-inline: auto;
 
-    table {
-        background-color: map-get($tabla , bgtabla);
+        table {
+            background-color: map-get($tabla , bgtabla);
 
-        thead {
-            background-color: map-get($tabla , encabezado);
-            color: white;
-            border-bottom: solid 3px #393939;
+            thead {
+                background-color: map-get($tabla , encabezado);
+                color: white;
+                border-bottom: solid 3px #393939;
+            }
+
+            tr:nth-child(even) {
+                background-color: map-get($tabla , 10descuesto);
+            }
+
+            th,
+            td {
+                padding: 10px;
+            }
         }
-
-        tr:nth-child(even) {
-            background-color: map-get($tabla , 10descuesto);
     }
-
-        th, td {
-            padding: 10px;
-        }
-    }
-}

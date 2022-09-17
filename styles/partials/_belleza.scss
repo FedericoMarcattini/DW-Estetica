@@ -2,73 +2,71 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(5, 1fr);
-    grid-template-areas: 
+    grid-template-areas:
         "peluqueria"
         "pestañas"
         "tinteCejas"
         "depilacionCejas"
         "spa";
-        gap: 30px;
-        justify-items: center;
-        width: 100%;
+    gap: 30px;
+    justify-items: center;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 20px;
+
+    .belleza {
+        background-color: #777777;
+        color: white;
+        display: flex;
+        width: 70%;
         height: 100%;
-        padding-bottom: 20px;
+        align-items: center;
+        border-radius: 25px;
+        overflow: hidden;
+        gap: 45px;
+        padding: 10px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+        transition: transform 0.5s ease;
 
-        .belleza {
-            background-color: #777777;
-            color: white;
-            display: flex;
-            width: 70%;
-            height: 100%;
-            align-items: center;
-            border-radius: 25px;
-            overflow: hidden;
-            gap: 45px;
-            padding: 10px;
-            box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-            transition: transform 0.5s ease;
-
-            &:hover {
-                @include hover(white, 2px inset $bg-header, translate(5px, 5px));
-                color: black;
-            }
-
-            .belleza__imagen {
-                max-width: 230px;
-                max-height: 230px;
-                margin-top: auto;
-                margin-bottom: auto;
-                border-radius: 20px;
-            }
-            
-            .belleza__titulo {
-                font-size: 24px;
-                padding-top: 10px;
-                padding-bottom: 20px;
-            }
-            
-            .belleza__parrafo {
-                font-size: 16px;
-            }
+        &:hover {
+            @include hover(white, 2px inset $bg-header, translate(5px, 5px));
+            color: black;
         }
 
-        .peluqueria {
-            grid-area: peluqueria;
+        .belleza__imagen {
+            max-width: 230px;
+            max-height: 230px;
+            border-radius: 20px;
         }
-        
-        .pestañas {
-            grid-area: pestañas;
+
+        .belleza__titulo {
+            font-size: 24px;
+            padding-top: 10px;
+            padding-bottom: 20px;
         }
-        
-        .tinteCejas {
-            grid-area: tinteCejas;
+
+        .belleza__parrafo {
+            font-size: 16px;
         }
-        
-        .depilacionCejas {
-            grid-area: depilacionCejas;
-        }
-        
-        .spa {
-            grid-area: spa;
-        }
+    }
+
+    .peluqueria {
+        grid-area: peluqueria;
+    }
+
+    .pestañas {
+        grid-area: pestañas;
+    }
+
+    .tinteCejas {
+        grid-area: tinteCejas;
+    }
+
+    .depilacionCejas {
+        grid-area: depilacionCejas;
+    }
+
+    .spa {
+        grid-area: spa;
+    }
 }
